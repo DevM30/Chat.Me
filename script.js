@@ -47,7 +47,7 @@ function getAnswer(question) {
                 addAnswerSection(resultData);
             } else {
                 isAnswerLoading = false;
-                addAnswerSection("Sorry, I couldn't fetch a response. Your daily chat limit might've been exceeded. Please try again later");
+                addAnswerSection("Sorry, I couldn't fetch a response. Your daily chat limit might've been exceeded. Please try again later.");
             }
         })
         .catch(error => {
