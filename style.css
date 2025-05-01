@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Gothic&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Winky Rough", sans-serif;
+}
+body 
+{
+    background: var(--secondary-color);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 100dvh;
+
+}
+:root 
+{
+    --primary-color: #6889b8;
+    --light-primary-color: #4f6bfe1a;
+    --secondary-color: #4f6cfe1a;
+}
+.container
+{
+    background: white;
+    width: 25rem;
+    max-height: 50rem;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.05);
+    border-radius: 0.75rem;
+    height: 95%;
+    margin-inline: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.header
+{
+    background: var(--primary-color);
+    padding: 1rem;
+    text-align: center;
+    color: white;
+}
+.content
+{
+    padding: 1rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow: auto;
+}
+.answer-section
+{
+    background: var(--light-primary-color);
+    padding: 0.5rem;
+    border-radius: 0.5rem 0.5rem 0.5rem 0 ;
+    width:fit-content;
+    display: flex;
+    align-items: center;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+.question-section
+{
+    background: var(--primary-color);
+    padding: 0.5rem;
+    color: white;
+    width: fit-content;
+    border-radius: 0.5rem 0.5rem 0.5rem 0 ;
+    margin-left: auto;
+    overflow-wrap: anywhere;
+}
+.chat-form
+{
+    padding: 1rem;
+    display:flex;
+    border-top: 1px solid #f2f2f2;
+    gap: 0.75rem;
+    align-items: center;
+}
+.chat-input
+{
+    outline: none;
+    border: none;
+    flex: 1;
+    height: 2.5rem;
+}
+.send-button
+{
+    background: var(--primary-color);
+    border: none;
+    padding: 0.5rem;
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+.send-button-nonactive
+{
+    opacity: 0.1;
+    background: black;
+    pointer-events: none;
+}
+.send-button:active
+{
+    transform: scale(0.9);
+}
