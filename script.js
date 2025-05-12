@@ -1,4 +1,4 @@
-const API_KEY = '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';
+const API_KEY = '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';
 const sendButton = document.getElementById('sendButton');
 const chatInput = document.getElementById('chatInput');
 const content = document.getElementById('content');
@@ -28,7 +28,7 @@ function getAnswer(question) {
             "Content-Type": "application/json"
         },
         body: JSON.stringify({
-            "model": "deepseek/deepseek-r1-distill-llama-70b:free",
+            "model": "nvidia/llama-3.3-nemotron-super-49b-v1:free",
             "messages": [
                 {
                     "role": "user",
